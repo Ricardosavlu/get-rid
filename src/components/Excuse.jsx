@@ -11,7 +11,7 @@ const Excuse = () => {
   }, []);
 
   const getQuote = () => {
-    let url = `https://gist.githubusercontent.com/Ricardosavlu/b5f83281587942f33b12f7399031e38b/raw/76d20789f1f40becae251e1324c5809eeade7067/excuses.json`;
+    let url = `https://gist.githubusercontent.com/Ricardosavlu/b5f83281587942f33b12f7399031e38b/raw/a445f9fa121d3033ca819ff5758459955694fd37/excuses.json`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
