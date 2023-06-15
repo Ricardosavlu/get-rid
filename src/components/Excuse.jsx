@@ -37,7 +37,6 @@ const Excuse = () => {
         <button onClick={handleClick} id="generator">
           Generate Excuse
         </button>
-        <span>Remember to give some context to be beliveble.</span>
       </div>
     </div>
   );

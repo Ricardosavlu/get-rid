@@ -1,52 +1,83 @@
 .welcome-container {
-  padding: 1rem 2rem;
+  display: flex;
+  padding-top: 2rem;
 }
 
 .logo {
-  width: 138px;
-  height: 109px;
-}
-.logo > img {
-  width: 100px;
-  height: 70px;
-  padding-left: -2rem;
+  margin-top: -1.5rem;
 }
 
-.header {
+.logo > img {
+  width: 70px;
+  height: 40px;
+}
+
+.header-left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.description {
+  padding: 4rem 0 0rem 4rem;
+}
+.h1 {
   display: flex;
   flex-direction: column;
-  margin-top: -90px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.h1 :nth-child(1) {
+  display: flex;
 }
 
-.header > :nth-child(1) {
+.description {
+  display: flex;
+  flex-direction: column;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
+  color: #202b21;
   font-size: 55px;
-  line-height: 50px;
-  text-align: center;
-  color: #eee3e8;
-  font-family: "sahitya", Arial, Helvetica, sans-serif;
+  line-height: 60px;
+  text-align: start;
+  font-family: "ruluko", Arial, Helvetica, sans-serif;
+  gap: 0.5rem;
 }
 
-.header > :nth-child(2) {
-  font-family: "sahitya", Arial, Helvetica, sans-serif;
-  color: #624a4a;
+.h2 {
+  font-family: "ruluko", Arial, Helvetica, sans-serif;
+  color: #fe9e4c;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
-
-  text-align: center;
+  text-align: justify;
+  padding-left: 1rem;
 }
-.header > :nth-child(3) {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 55px;
-  text-align: center;
-  color: rgba(110, 6, 93, 0.6);
+
+.stroke-text {
+  color: #49705f;
   font-family: "sahitya", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  padding-left: 1rem;
+}
+
+.header-right {
+  align-items: end;
+  justify-content: end;
+  margin-top: -3rem;
+  display: flex;
+  flex: 1;
+}
+.images {
+  display: flex;
+  padding-right: 0;
+  justify-content: end;
+  align-items: center;
+}
+.sleep {
+  width: 40rem;
+  height: 40rem;
+  margin-top: -4rem;
+  margin-bottom: -3rem;
 }
 
 @media screen and (max-width: 425px) {
